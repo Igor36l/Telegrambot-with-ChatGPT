@@ -1,4 +1,4 @@
-package com.bigproject.bot.openai;
+package com.bigproject.telegrambot.openai.api;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -10,7 +10,7 @@ public class RestClientConfig {
     @Bean
     public RestClient RestClient(){
         return RestClient.builder()
-                .baseUrl("https://api.proxyapi.ru/openai/v1/chat/completions")
+                .baseUrl("https://api.proxyapi.ru/openai/")
                 .build();
     }
 }
